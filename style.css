@@ -280,19 +280,7 @@
     transform: translateX(-50%);
   }
   
-  /* Layout Utilities */
-  .split-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-  }
-  
-  .grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
+  /* Layout Utilities handled by Bootstrap */
   
   /* Glass Card */
   .glass-card, .card {
@@ -394,18 +382,9 @@
   /* =========================================================================
      RESPONSIVE
      ========================================================================= */
-  @media (max-width: 992px) {
-    .split-layout {
-      grid-template-columns: 1fr;
-    }
-  }
-  
   @media (max-width: 768px) {
     .hero-content h1 {
       font-size: 2.5rem;
-    }
-    .grid-3 {
-      grid-template-columns: 1fr;
     }
     .footer-grid {
       grid-template-columns: 1fr;
