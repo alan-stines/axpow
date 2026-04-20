@@ -4,14 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build --base=./",
+    "generate:biographies": "node ./scripts/generate-biographies.mjs",
+    "dev": "npm run generate:biographies && vite",
+    "build": "npm run generate:biographies && vite build --base=./",
     "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "^5.0.0"
   },
   "dependencies": {
-    "bootstrap": "^5.3.8"
+    "bootstrap": "^5.3.8",
+    "marked": "^18.0.2"
   }
 }
